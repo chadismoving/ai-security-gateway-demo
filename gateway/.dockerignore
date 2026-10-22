@@ -1,0 +1,6 @@
+tests/
+requirements-dev.txt
+__pycache__/
+*.py[cod]
+.pytest_cache/
+

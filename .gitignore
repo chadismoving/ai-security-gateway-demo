@@ -1,0 +1,37 @@
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials.json
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Runtime data
+*.db
+*.sqlite
+*.sqlite3
+*.log
+data/*
+
+# Keep data directory
+!data/.gitkeep
+
+# Node.js / Reveal.js
+node_modules/
+dist/
+build/
+coverage/
+
+# macOS / IDE
+.DS_Store
+.idea/
+.vscode/

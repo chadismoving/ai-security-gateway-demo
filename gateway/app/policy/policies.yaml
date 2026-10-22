@@ -1,0 +1,26 @@
+risk_order:
+  low: 1
+  medium: 2
+  high: 3
+
+policies:
+  prompt_violation:
+    severity: high
+    action: block
+    label: PROMPT SECURITY
+    reason: Prompt classified as unsafe by the configured AI security policy.
+  unsafe_response:
+    severity: high
+    action: block
+    label: RESPONSE SECURITY
+    reason: The model response was classified as unsafe and was blocked before reaching the user.
+  classifier_unavailable:
+    severity: medium
+    action: log
+    label: FALLBACK POLICY
+    reason: Security classifier unavailable. Fallback policy activated and the event was logged.
+  normal:
+    severity: low
+    action: allow
+    label: STANDARD AI ACCESS
+    reason: No policy violations were detected.
